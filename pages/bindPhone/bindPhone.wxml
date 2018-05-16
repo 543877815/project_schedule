@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="phoneNumber">
+      <text>手机号:</text>
+      <input placeholder="请输入你的手机号" bindinput="bindUserPhoneNumberInput" />
+  </view>
+  <view class="identifyingCode">
+      <text>验证码:</text>
+      <input  bindinput="bindIdentifyingCodeInput" type="number"/>
+      <button bindtap="bindGetIdentifyingCode">获取验证码</button>
+  </view>
+  <button class="bindPhoneNumber" bindtap="bindBackToPersonalPage" >绑定手机号</button>
+
+   <button class="bindPhoneNumber" bindtap="bindClear">测试以清除sessionID</button>
+
+   <button class="bindPhoneNumber" bindtap="bindwechatOut">微信登出</button>
+</view>

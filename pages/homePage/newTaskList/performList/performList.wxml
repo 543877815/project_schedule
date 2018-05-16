@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="header" bindtap="addSendUser">添加人员</view>
+  <view class="groupList">
+    <block wx:for="{{groupList}}" wx:for-item="groupList">
+      <view class="group" data-groupid="{{groupList.groupid}}" catchtap="bindGroupTap">
+        <view class="groupName">
+          <text>{{groupList.name}}</text>
+          <image src="{{groupList.checked==true?'/miniProgram/schedule/imgs/tab/checked.png':'/miniProgram/schedule/imgs/tab/unchecked.png'}}" catchtap="bindGroupSelectTap" data-groupid="{{groupList.groupid}}"></image>
+        </view>
+        <view class="memberList hide {{groupList.display}}">
+          <view class="member" catchtap="bindMemberTap" data-userid="{{userlist.userid}}" data-groupid="{{groupList.groupid}}" wx:for="{{groupList.usersBeanList}}" wx:for-item="userlist">
+            <view class="Info">
+              <text class="name">{{userlist.name}}  </text>
+              <text class="telephone">{{userlist.tel}}</text>
+            </view>
+            <view class="icon">
+              <image src="{{userlist.checked==true?'/miniProgram/schedule/imgs/tab/checked.png':'/miniProgram/schedule/imgs/tab/unchecked.png'}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>

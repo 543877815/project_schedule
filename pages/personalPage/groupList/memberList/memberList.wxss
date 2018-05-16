@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.menberList{
+  display: flex;
+  flex-direction: column;
+
+}
+.member{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  height: 75px;
+}
+
+.member .memberName{
+  flex: 1;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+.member .memberInfo{
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+.member .memberDetailInfo{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.member .memberDetailInfo .memberNumber{
+  font-size: 12px;
+}
+.member .memberMajor{
+  flex: 2;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.member .delete{
+  flex: 1;
+  font-size: 12px;
+}
+.member .delete button{
+  line-height: 1.5;
+  margin-right: 10px;
+}

@@ -1,0 +1,12 @@
+<import src="homePage-Template/homePage-Template.wxml" />
+<view class="container">
+  <view class="header">
+    <image src="{{userWechatInfo.avatarUrl}}" class="avatar"></image>
+    <text class="add-task" catchtap="turnToaddNewTask">添加任务</text>
+  </view>
+  <!--使用 Template -->
+  <view class="title">接收到的任务</view>
+  <block wx:for="{{receiveTasks}}"  wx:for-item="receiveTasks" wx:for-index="index">
+      <template is="receiveTaskList" data="{{...receiveTasks}}"></template>
+  </block>
+</view>

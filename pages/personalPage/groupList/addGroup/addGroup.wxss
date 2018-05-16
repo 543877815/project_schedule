@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.groupName{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.groupName input{
+  border: 1px solid grey;
+}
+button{
+  margin-top: 50px;
+  width: 400rpx;
+}

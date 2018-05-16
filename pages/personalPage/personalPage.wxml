@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="personalInfo">
+    <view class="personalAvatar">
+      <image src="{{userWechatInfo.avatarUrl}}" class="avatarimage"></image>
+    </view>
+    <view class="personalDetailInfo">
+      <text class="name">{{userServerInfo.nickname}}</text>
+      <text class="studentNumber">{{userServerInfo.studentNumber}}</text>
+      <text class="studentCollege">{{userServerInfo.college}}</text>
+      <text class="studentMajor">{{userServerInfo.major}}</text>
+    </view>
+  </view>
+  <view class="functionList">
+    <view class="groupList list" bindtap="bindGroupList">群组列表</view>
+    <view class="taskList list" bindtap="bindtaskList">我发起的任务列表</view>
+    <view class="detailInfo" bindtap="bindPersonalDetailInfo">个人信息</view>
+    <view class="phoneNumber list" bindtap="reBindPhoneNumber">绑定的手机号:{{userServerInfo.tel}}</view>
+    <view class="opensetting" bindtap="bindopensetting">用户授权设置</view>
+    <view bindtap="bindLogOutPage">用户登出</view>
+  </view>
+</view>

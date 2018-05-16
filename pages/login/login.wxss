@@ -1,0 +1,52 @@
+view.phoneNumber ,view.identifyingCode, view.userName, view.password,view.repeatPassword{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 700rpx;
+  margin: 0 auto;
+}
+view.password{
+  width: 600rpx;
+}
+view.phoneNumber {
+  margin-top: 100px;
+}
+
+view.identifyingCode,view.identifyingCode, view.userName, view.password,view.repeatPassword {
+  margin-top: 20px;
+}
+
+.identifyingCode input {
+  width: 190rpx;
+  margin-right: 10px;
+}
+
+.identifyingCode button {
+  width: 180rpx;
+  font-size: 14px;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: 1px solid black;
+}
+
+button.bindPhoneNumber {
+  margin-top: 20px;
+  width: 300rpx;
+}
+.repeatLoginAlarm{
+  text-align: center; 
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+.repeatAlarm{
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}

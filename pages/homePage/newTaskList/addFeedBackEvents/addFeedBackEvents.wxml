@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="title">
+    <text>标题：</text>
+    <input />
+  </view>
+  <view class="description">
+    <text>描述：</text>
+    <textarea />
+  </view>
+  <view class="deadline">
+    <text>Deadline:</text>
+    <picker mode="date" value="{{date}}" start="2017-08-01" end="2100-01-01" bindchange="bindDateChange">
+      <view class="pickerDate">
+        {{date}}
+      </view>
+    </picker>
+    <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+      <view class="pickerTime">
+        {{time}}
+      </view>
+    </picker>
+  </view>
+  <view class="urgencyDegree">
+    <text>紧急度：</text>
+    <picker mode="selector" value="{{urgency}}" bindchange="bindUrgencyChange" range="{{urgencyDegree}}">
+      <view class="picker">
+      {{urgencyDegree[urgency]}}
+      </view>
+    </picker>
+  </view>
+  <view class="chooseToExecute">
+    <button>选择执行人</button>
+    <textarea />
+  </view>
+  <view class="launch">
+    <button bindtap="bindlaunch">发布</button>
+  </view>
+</view>

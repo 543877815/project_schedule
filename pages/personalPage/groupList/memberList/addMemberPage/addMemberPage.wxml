@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <view class="confirm" bindtap="bindBackToGroupList">确定</view>
+  </view>
+  <view class="groupName">{{group.groupName}}</view>
+  <view class="phoneNumber">
+    <text>手机号:</text>
+    <input placeholder="请输入手机号" bindinput="bindPhoneNumberInput" />
+  </view>
+  <button bindtap="addMember">添加</button>
+  <scroll-view class="memberList" scroll-y>
+    <view class="member" wx:for="{{memberList}}">
+      <view class="memberName">{{item.name}}</view>
+      <view class="memberCollege">{{item.college}}</view>
+      <view>
+        <button class="delete" bindtap="bindDeleteMember" data-userid="{{item.userid}}">移除</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

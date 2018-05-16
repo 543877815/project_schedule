@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="header">
+    <image src="{{avatar}}" class="avatar"></image>
+    <text>用户名:{{userServerInfo.name}}</text>
+  </view>
+  <view class="contain">
+    <view class="nickName">
+      <text>昵称:</text>
+      <input placeholder="{{userServerInfo.nickname}}" bindinput="bindNickNameInput" />
+    </view>
+    <view class="unit">
+      <text>学校(公司):</text>
+      <input placeholder="{{userServerInfo.college}}" bindinput="bindUnitInput"/>
+    </view>
+    <view class="department">
+      <text>专业(部门):</text>
+      <input placeholder="{{userServerInfo.major}}" bindinput="bindDepartmentInput"/>
+    </view>
+  </view>
+  <view class="footer" bindtap="bindSaveInfo">
+    保存<text wx:if="{{bindSuccessAlarm}}">成功!</text>
+  </view>
+</view>

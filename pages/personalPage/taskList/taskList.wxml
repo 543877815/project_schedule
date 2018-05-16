@@ -1,0 +1,6 @@
+<import src="../taskList-Template/taskList-Template.wxml" />
+<view class="container">
+  <view class="taskList" wx:for="{{sendTasks}}" wx:for-item="sendTasks" wx:for-index="index">
+    <template is="sendTaskList" data="{{...sendTasks}}"></template>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  margin-top: 10px;
+}
+
+
+.taskInfo{
+  margin: 20px 30px 0 30px;
+}
+.table {
+  width: 650rpx;
+  height: 800rpx;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.tr {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.td,.th{
+  border: 1px solid darkgray
+}
+.first{
+  flex: 1;
+}
+.second{
+  flex: 1;
+}
+.third{
+  flex: 1
+}

@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.header .confirm {
+  font-size: 24px;
+  margin: 20px 10px;
+  font-weight: bold;
+}
+view.groupName{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold
+}
+view.phoneNumber {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+view.phoneNumber input {
+  border: 1px solid gray;
+}
+
+button.addMumber {
+  margin-top: 20px;
+  width: 350rpx;
+  line-height: 1.5;
+}
+.memberList{
+  width: 600rpx;
+  height: 700rpx;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.memberList .member{
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.memberList view.member>view{
+  display: flex;
+  flex-direction: row;
+  
+}
+.memberList .member .memberName{
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.memberList .member .memberCollege{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+  align-self: flex-end;
+  
+}
+button.delete{
+  line-height: 1.5;
+  font-size: 16px;
+  margin-right: 10px;
+}

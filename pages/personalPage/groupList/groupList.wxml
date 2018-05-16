@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="header" bindtap="bindAddGroup">添加群组</view>
+    <view class="groupList">
+        <view class="group" catchtap="bindTurnToMemberList" 
+        wx:for="{{groupList}}" data-groupid="{{item.groupid}}">
+        {{item.name}}
+        <button catchtap="bindGroupDelete" data-groupid="{{item.groupid}}">删除</button>
+        </view>
+    </view>
+</view>

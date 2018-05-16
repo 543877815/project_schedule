@@ -1,0 +1,29 @@
+/getThirdSession
+参数：String code
+返回值：String third_session
+
+/checkThirdSession
+参数：String 3rd_session
+返回值：0/1/6
+
+/wechatRegister
+参数：Users
+返回值：0/1/4/5
+
+/wechatTel
+参数：String tel,String param
+返回值：0/1/2/3
+
+/getWechatInfo
+参数：WechatBean(就是把那四个东西封装成JSON)
+返回值：0/1/6/7
+
+返回值：
+0：错误
+1：成功
+2：未注册
+3：验证码错误
+4：学号已存在
+5：用户名已存在
+6：超时失效
+7：密钥长度不符合

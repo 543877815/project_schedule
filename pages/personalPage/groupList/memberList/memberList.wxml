@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header" bindtap="bindAddMember">添加人员</view>
+  <view class="memberList">
+    <view class="member" wx:for="{{memberList}}">
+      <view class="memberName">{{item.name}}</view>
+      <view class="memberInfo">
+        <view class="memberDetailInfo">
+          <text class="memberNumber">{{item.studentNumber}}</text>
+          <text class="memberCollege">{{item.college}}</text>
+        </view>
+        <view class="memberMajor">{{item.major}}</view>
+      </view>
+      <view class="delete">
+        <button bindtap="bindDeleteMember" data-userid="{{item.userid}}">移除</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+view.title,
+view.description,
+view.deadline,
+view.urgency{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+view.submit{
+  margin-top: 50px;
+}
+view.submit button{
+  width: 200px;
+}

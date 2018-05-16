@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="header">
+    <image src="{{avatarUrl}}"></image>
+    <text catchtap="backToLastPage">返回</text>
+  </view>
+  <view class="taskList">
+    <view class="taskBlock">
+      <!-- <view class="task" catchtap="addFeedBackEvents"><text>常规事件</text></view>
+      <view class="task" catchtap="addNonFeedBackEvents"><text>离校时间统计</text></view> -->
+      <view class="task" catchtap="addNewEvents" data-feedback="false"><text>常规事件</text></view>
+      <view class="task" catchtap="addNewEvents" data-feedback="true"><text>离校时间统计</text></view>
+      <view class="task"><text></text></view>
+    </view>
+    <view class="taskBlock">
+      <view class="task"><text></text></view>
+      <view class="task"></view>
+      <view class="task"></view>
+    </view>
+    <view class="taskBlock">
+      <view class="task"></view>
+      <view class="task"></view>
+      <view class="task"></view>
+    </view>
+  </view>
+</view>

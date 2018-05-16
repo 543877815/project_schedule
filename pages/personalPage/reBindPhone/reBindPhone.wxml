@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="oldPhoneNumber">
+    <text>旧号码:{{tel}}</text>
+  </view>
+  <view class="phoneNumber">
+    <text>新号码:</text>
+    <input placeholder="请输入你的手机号" bindinput="bindUserPhoneNumberInput" />
+  </view>
+  <view class="identifyingCode">
+    <text>验证码:</text>
+    <input bindinput="bindidentifyingCodeInput"/>
+    <button bindtap="bindGetIdentifyingCode">获取验证码</button>
+  </view>
+  <button class="bindPhoneNumber" bindtap="bindBackToPersonalPage">确定改绑</button>
+</view>

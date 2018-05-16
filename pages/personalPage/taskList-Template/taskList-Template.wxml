@@ -1,0 +1,6 @@
+<template name="sendTaskList">
+  <view class="task" catchtap="bindViewTaskDetail" data-taskid="{{taskid}}">
+      <text class="title">{{title}}</text>
+      <button catchtap="bindDeleteTask" data-taskid="{{taskid}}">删除</button>
+  </view>
+</template>

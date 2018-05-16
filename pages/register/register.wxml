@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="user">
+    <text>用户名:</text>
+    <input bindinput="bindUserInput" />
+  </view>
+  <view class="password">
+    <text>密码:</text>
+    <input bindinput="bindPasswordInput" type="password" />
+  </view>
+  <view class="repeatPassword">
+    <text>重复密码:</text>
+    <input bindinput="bindRepeatPasswordInput" type="password"/>
+  </view>
+  <text class="repeatAlarm" wx:if="{{repeatAlarm}}" style="color:red">两次输入的密码不一致!</text>
+  <button bindtap="bindregister">确定</button>
+</view>

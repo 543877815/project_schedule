@@ -1,0 +1,2 @@
+<button bindtap="bindLogOut">LogOut</button>
+<button bindtap="bindWechatOut">WechatOut</button>

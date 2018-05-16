@@ -1,0 +1,71 @@
+.taskList{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-top: 10rpx;
+  padding-left: 10px;
+}
+
+.listContainer1{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  margin-top: 10px;
+
+}
+
+.listContainer1 .taskTitle{
+  font-size: 24px;
+  font-weight: bold;
+  flex: 3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+
+.listContainer1 .taskDeadline{
+  font-size: 12px;
+  flex: 1;
+  font-weight: bold;
+}
+.listContainer1 .taskDegree{
+  font-size: 16px;
+  font-weight: bold;
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.listContainer2{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 65px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.listContainer2 text{
+  flex: 1;
+  align-self: flex-start;
+  font-size: 14px;
+  text-overflow: ellipsis;
+   display: -webkit-box;  
+  -webkit-line-clamp: 4;  
+  -webkit-box-orient: vertical;  
+}
+
+.listContainer2 .taskSelect{
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.listContainer2 .taskSelect button{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}

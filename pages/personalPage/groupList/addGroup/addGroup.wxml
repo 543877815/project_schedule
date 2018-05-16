@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="groupName">
+    <text>群组名:</text>
+    <input placeholder="请输入群组名" bindinput="bindGroupNameInput"/>
+  </view>
+  <button bindtap="bindAddMember">添加群组成员</button>
+</view>

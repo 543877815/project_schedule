@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="taskInfo">
+    <view class="taskTitle">标题:{{sendTaskInfo.taskTitle}}</view>
+    <view class="taskDescription">描述:{{sendTaskInfo.taskDescription}}</view>
+    <view class="taskDeadline">Deadline:{{sendTaskInfo.deadlineYear}}-{{sendTaskInfo.deadlineMonth}}-{{sendTaskInfo.deadlineDay}}</view>
+    <view class="taskUrgency">紧急度:{{sendTaskInfo.urgencyDegree}}</view>
+  </view>
+  <scroll-view scroll-y class="table">
+    <view class="tr">
+      <view class="th first">姓名</view>
+      <view class="th second">学号</view>
+      <view class="th third">状态</view>
+    </view>
+    <view class="tr" wx:for="{{memberList}}" wx:key="*this">
+        <view class="td first">{{item.nickname}}</view>
+        <view class="td second">{{item.studentid}}</view>
+        <view class="td third">{{item.feedback}}</view>
+    </view>
+  </scroll-view>
+</view>

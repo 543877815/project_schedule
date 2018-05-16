@@ -1,0 +1,21 @@
+<template name="receiveTaskList">
+  <view class="taskList">
+    <view class="listContainer1">
+      <text class="taskTitle">{{title}}</text>
+        <view class="taskDeadline">Deadline:
+        <text class="deadlineYear">{{deadlineYear}}</text>年
+        <text class="deadlineMonth">{{deadlineMonth}}</text>月
+        <text class="deadlineDay">{{deadlineDay}}</text>日
+        <text class="deadlineTime">{{deadlineTime}}</text>
+      </view>
+      <text class="taskDegree">{{urgency}}</text>
+    </view>
+    <view class="listContainer2">
+      <text>{{context}}</text>
+      <view class="taskSelect">
+       <button catchtap="{{feedbacktype==0?'turnToFeedbackFinishPage':'turnToNonFeedbackFinishPage'}}" data-taskid="{{taskid}}">完成</button>
+        <button catchtap="showGiveUpModal" data-taskid="{{taskid}}">放弃</button>
+      </view>
+    </view>
+  </view>
+</template>

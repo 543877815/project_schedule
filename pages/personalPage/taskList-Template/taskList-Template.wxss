@@ -1,0 +1,17 @@
+.task{
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 28px ;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.task button{
+  margin: 0;
+}

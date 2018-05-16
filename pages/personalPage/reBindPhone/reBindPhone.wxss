@@ -1,0 +1,39 @@
+.identifyingCode, .phoneNumber, .oldPhoneNumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600rpx;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.oldPhoneNumber {
+  margin-top: 100px;
+}
+
+.identifyingCode, .phoneNumber {
+  margin-top: 20px;
+}
+
+.identifyingCode input {
+  width: 190rpx;
+  margin-right: 10px;
+}
+
+.identifyingCode button {
+  width: 180rpx;
+  font-size: 14px;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: 1px solid black;
+}
+
+button.bindPhoneNumber {
+  margin-top: 20px;
+  width: 300rpx;
+}

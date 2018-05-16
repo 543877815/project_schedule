@@ -1,0 +1,43 @@
+input, textarea {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+view.title input {
+  width: 170px;
+}
+
+view.description, view.title, view.deadline, view.urgencyDegree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+view.deadline view.pickerTime {
+  margin-left: 10px;
+}
+
+view.chooseToExecute button {
+  width: 150px;
+  margin-top: 10px;
+}
+
+view.chooseToExecute textarea {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+view.description textarea {
+  width: 170px;
+}
+
+view.launch button {
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 20px;
+}

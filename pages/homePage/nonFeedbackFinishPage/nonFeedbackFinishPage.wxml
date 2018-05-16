@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="title">
+    <text>标题:</text>
+    <text class="titleDetail">{{task.title}}</text>
+  </view>
+  <view class="description">
+    <text>描述:</text>
+    <text class="descriptionDetail">{{task.context}}</text>
+  </view>
+  <view class="deadline">
+    <text>Deadline:</text>
+    <text><text class="year">{{task.deadlineYear}}</text>年<text class="month">{{task.deadlineMonth}}</text>月<text class="date">{{task.deadlineDay}}</text>日 {{task.deadlineTime}}</text>
+    
+  </view>
+  <view class="urgency">
+    <text>紧急度:</text>
+    <text class="urgencyDegree">{{task.urgency}}</text>
+  </view>
+  <view class="submit">
+    <button bindtap="backToHomePage">提交</button>
+  </view>
+</view>

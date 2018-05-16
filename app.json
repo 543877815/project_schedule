@@ -1,0 +1,57 @@
+{
+  "pages": [
+    
+
+    "pages/homePage/homePage",
+    "pages/homePage/feedbackFinishPage/feedbackFinishPage",
+    "pages/homePage/nonFeedbackFinishPage/nonFeedbackFinishPage",
+    "pages/homePage/newTaskList/newTaskList",
+    "pages/homePage/newTaskList/performList/performList",
+    "pages/homePage/newTaskList/addNewEvents/addNewEvents",
+    "pages/homePage/newTaskList/addFeedBackEvents/addFeedBackEvents",
+    "pages/homePage/newTaskList/addNonFeedBackEvents/addNonFeedBackEvents",
+    
+    "pages/personalPage/personalPage",
+    "pages/personalPage/detailInfo/detailInfo",
+    "pages/personalPage/reBindPhone/reBindPhone",
+    "pages/personalPage/groupList/groupList",
+    "pages/personalPage/groupList/addGroup/addGroup",
+    "pages/personalPage/groupList/blackMemberList/blackMemberList",
+    "pages/personalPage/groupList/memberList/memberList",
+    "pages/personalPage/groupList/memberList/addMemberPage/addMemberPage",
+    "pages/personalPage/taskList/taskList",
+    "pages/personalPage/taskList/task/task",
+    "pages/personalPage/logout/logout",
+
+    "pages/bindPhone/bindPhone",
+    "pages/register/register",
+
+    "pages/login/login",
+    "pages/registerTest/registerTest"
+
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "miniProgram/schedule/imgs/tab/homePage.png",
+        "selectedIconPath": "miniProgram/schedule/imgs/tab/homePage_hl.png"
+      },
+      {
+        "pagePath": "pages/personalPage/personalPage",
+        "text": "我的",
+        "iconPath": "miniProgram/schedule/imgs/tab/personalCenter.png",
+        "selectedIconPath": "miniProgram/schedule/imgs/tab/personalCenter_hl.png"
+      }
+    ]
+  }
+}
